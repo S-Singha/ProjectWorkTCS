@@ -1,0 +1,40 @@
+
+.logo
+{
+    background-image: url("../images/img-careers-baloons.gif");
+    background-repeat:no-repeat ;
+    background-size: 750px,750px;
+    backface-visibility:inherit;
+    background-position: center,center;
+}
+
+  .image
+{
+    background-image: url("../images/CSR-initiatives.jpg"); /* The image used */
+    height:550px; /* You must set a specified height */
+    width: 540px;
+    background-position: right; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size:contain; /* Resize the background image to cover the entire container */
+    padding-left: 50px;
+    padding-right: 50px; 
+}
+.card{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.hide{
+    visibility: hidden;
+}
+
+#continue, #finalSubmit{
+  margin-top: 30px;
+  float: right;
+}
+.form-label{
+  font-weight: 700;
+}
+.card{
+  margin-right: 10px;
+  margin-left: 10px;
+}

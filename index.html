@@ -1,0 +1,147 @@
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <link href="css/CSR.css" rel="stylesheet" type="text/css"/>
+    <title>Internship</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgba(184, 240, 236, 0.822)">
+      <div class="container-fluid">
+        <img src="images/images.jfif" alt="" width="150" height="150">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active fs-3" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fs-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Education and Skill Building</a></li>
+                <li><a class="dropdown-item" href="#">Health and Wellness</a></li>
+                <li><a class="dropdown-item" href="#">Environmental Sustainability</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-3" href="https://gmail.com">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <section class="logo">
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row">
+                      <h3> What Is Corporate Social Responsibility (CSR)?<br></h3>
+                      <h5 style="text-align: justify;">
+                        Corporate social responsibility (CSR) is a self-regulating business
+                        model that helps a company be socially accountable—to itself, its 
+                        stakeholders, and the public. By practicing corporate social responsibility, 
+                        also called corporate citizenship, companies can be conscious of the kind of impact 
+                        they are having on all aspects of society, including economic, social, and environmental.</h5>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-9 align-self-center">
+                            <p class="image"></p>
+                        </div>
+                        <div class="col-md-3 align-self-center">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-6">
+                  <div  class="row" >
+                    <p class="fs-1">Candidates:</p>
+                  </div>
+                  <div  class="row" >
+                    <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="candidate-selection">
+                      <option value="select" selected>Select Candidates</option>
+                      <option value="Sanchari Singha">Sanchari Singha</option>
+                      <option value="Swarna Roy">Swarna Roy</option>
+                      <option value="Anusree Goswami">Anusree Goswami</option>
+                      <option value="Srijan Sinha">Srijan Sinha</option>
+                    </select>
+                  </div>
+                 
+                  <div class="row profession-card ">
+                    <div class="card">
+                      <div class="card-body hide">
+                        <h5 class="card-title">Candidate Profession</h5>
+                        <form id="profession-form" target="">
+                          <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                          </div>
+                          <div class="mb-3">
+                            <label for="work" class="form-label">Work</label>
+                            <input type="text" class="form-control" id="work" required>
+                          </div>
+                          
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class= "row">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="fs-4">#</th>
+                          <th scope="col" class="fs-4">Name</th>
+                          <th scope="col"class="fs-4">Email</th>
+                          <th scope="col"class="fs-4">Work</th>
+                          <th scope="col"class="fs-4">Delete</th>
+                        </tr>
+                      </thead>
+                      <tbody id="table-body">
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                  <button type="button" class="btn btn-success btn-lg" id="continue">Next Page</button>
+                </div>
+            </div>
+        </div>
+    </section>
+      <div class="modal" id="myModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Error</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <hr>
+<footer class="page-footer font-small blue">
+  <div class="footer-copyright text-center py-3">© 2021 Copyright:
+    <a href=""> Thank you for visiting my page</a>
+  </div>
+</footer>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/CSR.js"></script>
+    
+  </body>
+</html>

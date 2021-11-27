@@ -1,1 +1,1 @@
-<?php include("CSR.html"); ?>
+<?php include("index.html"); ?>

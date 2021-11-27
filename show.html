@@ -1,47 +1,68 @@
 <html>
   <head>
     <link href="css/bootstrap.min.css" rel="stylesheet" >
-    <link href="CSR.css" rel="stylesheet" type="text/css"/>
+    <link href="css/CSR.css" rel="stylesheet" type="text/css"/>
     <title>Show Candidates</title>
   </head>
   <body>
-    <div class="container my-5">
-        <div class="row justify-content-md-start">
-            <div class="col-md-1 align-self-center">
-
-            </div>
-            <div class="col-md-10 align-self-center">
-                <table class="table table-striped table-hover">
-                    <thead>
-                        <tr>
-                        <th scope="col">Name</th>
-                        <th scope="col">Work</th>
-                        <th scope="col">Mail Id</th>
-                        <th scope="col">Upload File</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        <th scope="row">Sanchari Singha</th>
-                        <td>B.Tech Student from ECE</td>
-                        <td>sancharisingha15@gmail.com</td>
-                        <td>
-                            <div class="mb-3">
-                            <input type="file" class="form-control" aria-label="file example" required>
-                            <div class="invalid-feedback">Example invalid form file feedback</div>
-                          </div>
-                        
-                          <div class="mb-3">
-                            <button class="btn btn-primary" type="submit" disabled>Submit form</button>
-                          </div>
-                        </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-md-1 align-self-center">
-
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgba(184, 240, 236, 0.822)">
+      <div class="container-fluid">
+        <img src="../images/images.jfif" alt="" width="100" height="100">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active fs-5" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Education and Skill Building</a></li>
+                <li><a class="dropdown-item" href="#">Health and Wellness</a></li>
+                <li><a class="dropdown-item" href="#">Environmental Sustainability</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="https://www.tcs.com/corporate-sustainability-investor-relations">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
+      </div>
+    </nav>
+    <div class="container my-5">
+      <div class="row justify-content-md-start">
+          <div class="col align-self-center">
+              <table class="table table-striped table-hover">
+                  <thead>
+                      <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Mail Id</th>
+                      <th scope="col">Work</th>
+                      </tr>
+                  </thead>
+                  <tbody id="table-body">
+                  </tbody>
+              </table>
+          </div>
+      </div>
+      
+      <div class="row space">
+      </div>
+      <button type="button" class="btn btn-success btn-lg" id="finalSubmit">Submit</button>
+      </div>
     </div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/show.js"></script>
   </body>
+</html>
